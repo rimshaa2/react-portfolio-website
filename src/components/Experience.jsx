@@ -4,16 +4,16 @@ import { useState, useEffect } from 'react';
 const Experience = () => {
   const experiences = [
     {
-      year: "June 2024 - Present",
-      role: "Javascript Developer Intern",
-      company: "KK Solutions",
-      description: "Developed and maintained web applications using React, JavaScript, and CSS. Collaborated with the design team to create an interactive and responsive user interface."
+      year: "Feb 2025 - April 2025",
+      role: "Web Developer Intern",
+      company: "Medical Imaging and Diagnostic Lab, NCAI",
+      description: "Developed frontend for NCAI website using React, TypeScript and Tailwind CSS."
     },
     {
-      year: "July 2024 - Present",
-      role: "Front-end Developer Intern",
-      company: "Code Alpha",
-      description: "Worked on various front-end projects using HTML/CSS and JavaScript. Implemented RESTful APIs and ensured high performance and scalability of applications."
+      year: "June 2024 - July 2024",
+      role: "Javascript ans React Developer Intern",
+      company: "KK Solutions",
+      description: "Developed and maintained web applications using React, JavaScript, and CSS. Collaborated with the design team to create an interactive and responsive user interface."
     },
     {
       year: "July 2024 - Present",
@@ -27,7 +27,7 @@ const Experience = () => {
     <div className="border-b border-neutral-900 pb-4">
       <h1 className="my-20 text-center text-4xl">Experience</h1>
       <div>
-        {experiences.map((experience, index) => {
+        {experiences.slice(0, -1).map((experience, index) => {
           const { ref, inView } = useInView({
             triggerOnce: true,
             threshold: 0.1,

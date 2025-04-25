@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaJava, FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaReact, FaPython } from "react-icons/fa";
+import { SiTailwindcss, SiTypescript } from "react-icons/si";
+
 import { SiOracle } from "react-icons/si";
 
 const Technologies = () => {
@@ -157,9 +159,49 @@ const Technologies = () => {
             className="mt-2 text-gray-600 text-center"
             variants={textVariants}
           >
-            React
+            ReactJS
           </motion.p>
         </motion.div>
+        <motion.div
+          className="flex flex-col items-center"
+          variants={iconVariants}
+          initial="hidden"
+          animate={inView ? 'visible' : 'hidden'}
+        >
+          <motion.div
+            className="rounded-full bg-gradient-to-r from-sky-400 to-sky-600 p-4 hover:scale-110 transition-transform duration-300"
+            whileHover={{ scale: 1.1 }}
+          >
+            <SiTailwindcss className="text-4xl text-white hover:text-sky-200" />
+          </motion.div>
+          <motion.p
+            className="mt-2 text-gray-600 text-center"
+            variants={textVariants}
+          >
+            Tailwind CSS
+          </motion.p>
+        </motion.div>
+        
+        <motion.div
+          className="flex flex-col items-center"
+          variants={iconVariants}
+          initial="hidden"
+          animate={inView ? 'visible' : 'hidden'}
+        >
+          <motion.div
+            className="rounded-full bg-gradient-to-r from-blue-600 to-blue-800 p-4 hover:scale-110 transition-transform duration-300"
+            whileHover={{ scale: 1.1 }}
+          >
+            <SiTypescript className="text-4xl text-white hover:text-blue-300" />
+          </motion.div>
+          <motion.p
+            className="mt-2 text-gray-600 text-center"
+            variants={textVariants}
+          >
+            TypeScript
+          </motion.p>
+        </motion.div>
+
 
         <motion.div
           className="flex flex-col items-center"

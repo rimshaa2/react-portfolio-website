@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import resumePdf from '../assets/CV-RIMSHA-SAJID.pdf'; // Path to your resume PDF file
-import aboutMeImage from '../assets/aboutme.png'; // Path to your about me image
+import resumePdf from '../assets/Rimsha-Sajid-CV.pdf'; 
+import aboutMeImage from '../assets/aboutme.png'; 
 
 const AboutMe = ({ bgColor }) => {
   const { ref, inView } = useInView({
@@ -59,18 +59,19 @@ const AboutMe = ({ bgColor }) => {
             animate={inView ? 'visible' : {}}
           >
             <p className="text-lg leading-relaxed mb-4 hover:text-blue-500 transition-colors duration-300">
-              Hello! I am Rimsha Sajid, a passionate and dedicated front-end developer with a strong background in Software Engineering. Currently, I am pursuing my degree at COMSATS University Islamabad.
+              Hi! I'm Rimsha Sajid, a frontend web developer with a strong passion for building clean, efficient, and responsive user interfaces using modern technologies. I'm currently pursuing a degree in Software Engineering at COMSATS University Islamabad.
             </p>
             <p className="text-lg leading-relaxed mb-4 hover:text-blue-500 transition-colors duration-300">
-              Over the course of my studies, I have engaged in numerous projects using languages such as C/C++, Java, HTML, CSS, and JavaScript. My work is driven by a keen interest in creating interactive and user-friendly web applications.
+              My primary focus lies in developing dynamic and accessible web applications using <strong>ReactJS</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>. I enjoy transforming designs into functional components, maintaining code quality, and ensuring great user experience across all devices.
             </p>
             <p className="text-lg leading-relaxed mb-4 hover:text-blue-500 transition-colors duration-300">
-              In addition to coding, I have honed my skills in UI/UX design using Figma. This has enabled me to develop comprehensive and interactive designs for mobile applications, ensuring a seamless user experience.
+              Along with frontend frameworks, I have hands-on experience with JavaScript, HTML, and CSS. I also use design tools like Figma to prototype and translate UI/UX concepts into fully responsive interfaces.
             </p>
             <p className="text-lg leading-relaxed mb-4 hover:text-blue-500 transition-colors duration-300">
-              I am always eager to learn new technologies and methodologies, and I am excited to bring my skills and enthusiasm to new projects and collaborations.
+              I'm always eager to explore new tools and stay updated with the latest in web development. Whether it's optimizing performance, improving accessibility, or refining UI, I thrive on building intuitive and modern web experiences.
             </p>
           </motion.div>
+
         </div>
       </div>
     </section>

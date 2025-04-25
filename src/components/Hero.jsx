@@ -30,12 +30,14 @@ const Hero = () => {
               Front-end Developer
             </motion.span>
             <motion.p 
-            variants = {container(1)}
-            initial= "hidden"
-            animate = "visible"
-            className="max-w-xl py-6 font-light tracking-lighter">
-              I am currently pursuing a degree in Software Engineering at COMSATS University Islamabad. My experience encompasses a variety of projects developed using C/C++, Java, HTML/CSS, and JavaScript. Additionally, I have utilized Figma to design and develop interactive UI/UX for mobile applications.
+              variants={container(1)}
+              initial="hidden"
+              animate="visible"
+              className="max-w-xl py-6 font-light tracking-lighter"
+            >
+              I am currently pursuing a degree in Software Engineering at COMSATS University Islamabad. My core expertise lies in frontend development using <strong>ReactJS</strong>, <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>. I have worked on several projects focused on building responsive and accessible web interfaces. Additionally, I use Figma to design clean and interactive UI/UX experiences, ensuring seamless transitions from design to deployment.
             </motion.p>
+
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end lg:p-8">
